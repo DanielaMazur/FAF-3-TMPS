@@ -1,4 +1,5 @@
-﻿using BakeryShop.Interfaces;
+﻿using BakeryShop.Enums;
+using BakeryShop.Interfaces;
 using System.Linq;
 
 namespace BakeryShop
@@ -10,7 +11,7 @@ namespace BakeryShop
  
           public ICakeBuilder AddCandiesDecorations(int units = 1)
           {
-               var candies = _storage.Ingredients.Single(ing => ing.Type == IngredientTypeEnum.Canides).Clone();
+               var candies = _storage.Ingredients.Single(ing => ing.Type == IngredientTypeEnum.Canides);
                candies.Supply = units;
                _cake.Ingredients.Add(candies);
                return this;
@@ -18,7 +19,7 @@ namespace BakeryShop
 
           public ICakeBuilder AddCream()
           {
-               var cream = _storage.Ingredients.Single(ing => ing.Type == IngredientTypeEnum.Cream).Clone();
+               var cream = _storage.Ingredients.Single(ing => ing.Type == IngredientTypeEnum.Cream);
                cream.Supply = 1;
                _cake.Ingredients.Add(cream);
                return this;
@@ -26,8 +27,8 @@ namespace BakeryShop
 
           public ICakeBuilder AddDough(bool isGlutenFree = false)
           {
-               var cackeDoughType = isGlutenFree ? IngredientTypeEnum.GlutenFreeCakeDough : IngredientTypeEnum.CakeDough;
-               var cackeDough = _storage.Ingredients.Single(ing => ing.Type == cackeDoughType).Clone();
+               var cackeDoughType = isGlutenFree ? IngredientTypeEnum.GlutenFreeDough : IngredientTypeEnum.Dough;
+               var cackeDough = _storage.Ingredients.Single(ing => ing.Type == cackeDoughType);
                cackeDough.Supply = 1;
                _cake.Ingredients.Add(cackeDough);
                return this;
@@ -35,7 +36,7 @@ namespace BakeryShop
 
           public ICakeBuilder AddFruits()
           {
-               var fruits = _storage.Ingredients.Single(ing => ing.Type == IngredientTypeEnum.Fruits).Clone();
+               var fruits = _storage.Ingredients.Single(ing => ing.Type == IngredientTypeEnum.Fruits);
                fruits.Supply = 1;
                _cake.Ingredients.Add(fruits);
                return this;
@@ -43,7 +44,7 @@ namespace BakeryShop
 
           public ICakeBuilder AddChocolate(int units)
           {
-               var chocolate = _storage.Ingredients.Single(ing => ing.Type == IngredientTypeEnum.Chocolate).Clone();
+               var chocolate = _storage.Ingredients.Single(ing => ing.Type == IngredientTypeEnum.Chocolate);
                chocolate.Supply = units;
                _cake.Ingredients.Add(chocolate);
                return this;

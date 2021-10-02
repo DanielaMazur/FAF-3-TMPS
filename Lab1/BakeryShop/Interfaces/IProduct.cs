@@ -6,5 +6,6 @@ namespace BakeryShop.Interfaces
      {
           List<Ingredient> Ingredients { get; }
           public double GetPrice();
+          public IProduct Clone();
      }
 }

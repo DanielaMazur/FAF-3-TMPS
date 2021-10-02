@@ -4,13 +4,13 @@ using System.Linq;
 
 namespace BakeryShop
 {
-     class Cake : IProduct, IProductPrototype<Cake>
+     class Cake : IProduct
      {
           public List<Ingredient> Ingredients { get; } = new();
 
-          public Cake Clone()
+          public IProduct Clone()
           {
-               return (Cake)this.MemberwiseClone();
+               return (IProduct)this.MemberwiseClone();
           }
 
           public double GetPrice()

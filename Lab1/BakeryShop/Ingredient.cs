@@ -1,8 +1,8 @@
-﻿using BakeryShop.Interfaces;
-
+﻿using BakeryShop.Enums;
+ 
 namespace BakeryShop
 {
-     class Ingredient : IProductPrototype<Ingredient>
+     class Ingredient
      {
           public IngredientTypeEnum Type { get; }
           public float Price { get; }
@@ -13,11 +13,6 @@ namespace BakeryShop
                Type = type;
                Price = price;
                Supply = supply;
-          }
-
-          public Ingredient Clone()
-          {
-               return (Ingredient)this.MemberwiseClone();
           }
      }
 }

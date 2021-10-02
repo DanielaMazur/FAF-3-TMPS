@@ -1,10 +1,11 @@
-﻿using System.Collections.Generic;
+﻿using BakeryShop.Interfaces;
+using System.Collections.Generic;
 
 namespace BakeryShop
 {
      sealed class Menu
      {
-          public List<Cake> cakes { get; set; } = new();
+          public List<IProduct> Items { get; set; } = new();
 
           private static readonly Menu _menuInstance = new();
           private Menu() { }
