@@ -9,6 +9,7 @@ namespace BakeryShop.Interfaces
           ICakeBuilder AddCandiesDecorations(int units);
           ICakeBuilder AddFruits();
           ICakeBuilder AddChocolate(int units);
+          ICakeBuilder AddSecreteIngredient();
           Cake Bake();
      }
 }

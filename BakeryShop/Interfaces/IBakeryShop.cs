@@ -3,9 +3,10 @@ using System.Collections.Generic;
 
 namespace BakeryShop.Interfaces
 {
-     interface IBackeryShop
+     interface IBakeryShop
      {
           List<MenuItem> GetMenuItems();
           IProduct OrderMenuItem(int id);
+          void GetDelivery(List<IProduct> order);
      }
 }

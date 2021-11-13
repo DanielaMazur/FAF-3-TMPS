@@ -1,6 +1,7 @@
 ﻿using BakeryShop.Domain.Models;
 using BakeryShop.Enums;
 using BakeryShop.Interfaces;
+using System;
 using System.Linq;
 
 namespace BakeryShop.Domain.Builder
@@ -48,6 +49,13 @@ namespace BakeryShop.Domain.Builder
                var chocolate = _storage.Ingredients.Single(ing => ing.Type == IngredientTypeEnum.Chocolate);
                chocolate.Supply = units;
                _cake.Ingredients.Add(chocolate);
+               return this;
+          }
+
+          public ICakeBuilder AddSecreteIngredient()
+          {
+               var secretIngredient = new SecretIngredient(new Random().Next(50), 1);
+               _cake.Ingredients.Add(secretIngredient);
                return this;
           }
 

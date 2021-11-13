@@ -1,4 +1,4 @@
-﻿using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace BakeryShop.Interfaces
 {
@@ -6,5 +6,7 @@ namespace BakeryShop.Interfaces
      {
           public float Price { get; }
           public float MaxNumberOfUnits { get; }
+
+          public void Deliver(List<IProduct> products);
      }
 }

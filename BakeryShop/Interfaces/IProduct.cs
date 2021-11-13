@@ -5,7 +5,7 @@ namespace BakeryShop.Interfaces
 {
      interface IProduct
      {
-          List<Ingredient> Ingredients { get; }
+          List<IIngredient> Ingredients { get; }
           public double GetPrice();
           public IProduct Clone();
      }

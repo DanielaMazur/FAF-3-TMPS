@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BakeryShop.Interfaces;
+using System;
 using System.Collections.Generic;
 
 namespace BakeryShop.Domain.Models
@@ -7,8 +8,8 @@ namespace BakeryShop.Domain.Models
      {
           private static readonly Lazy<Storage> _storageIntance = new(() => new Storage());
           private Storage() { }
-          private static List<Ingredient> _ingredients = new();
-          public List<Ingredient> Ingredients
+          private static List<IIngredient> _ingredients = new();
+          public List<IIngredient> Ingredients
           {
                get => _ingredients;
                set => _ingredients = value;

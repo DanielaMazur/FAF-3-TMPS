@@ -6,7 +6,7 @@ namespace BakeryShop.Domain.Models
 {
      class Cake : IProduct
      {
-          public List<Ingredient> Ingredients { get; } = new();
+          public List<IIngredient> Ingredients { get; } = new();
 
           public IProduct Clone()
           {

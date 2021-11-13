@@ -7,7 +7,7 @@ namespace BakeryShop.Domain.Models
 {
      class Bread : IProduct
      {
-          public List<Ingredient> Ingredients { get; } = new();
+          public List<IIngredient> Ingredients { get; } = new();
 
           private readonly Storage _storage = Storage.Intance;
 

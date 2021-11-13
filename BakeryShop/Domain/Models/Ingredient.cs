@@ -1,8 +1,9 @@
 ﻿using BakeryShop.Enums;
+using BakeryShop.Interfaces;
 
 namespace BakeryShop.Domain.Models
 {
-     class Ingredient
+     class Ingredient : IIngredient
      {
           public IngredientTypeEnum Type { get; }
           public float Price { get; }
