@@ -1,8 +1,10 @@
-﻿using BakeryShop.Enums;
+﻿using BakeryShop.Domain.Builder;
+using BakeryShop.Domain.Models;
+using BakeryShop.Enums;
 using BakeryShop.Interfaces;
 using System.Collections.Generic;
 
-namespace BakeryShop
+namespace BakeryShop.Client
 {
      class Program
      {

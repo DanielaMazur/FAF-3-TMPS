@@ -1,8 +1,9 @@
-﻿using BakeryShop.Enums;
+﻿using BakeryShop.Domain.Models;
+using BakeryShop.Enums;
 using BakeryShop.Interfaces;
 using System.Linq;
 
-namespace BakeryShop
+namespace BakeryShop.Domain.Builder
 {
      class CakeBuilder : ICakeBuilder
      {

@@ -3,11 +3,12 @@ using BakeryShop.Interfaces;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace BakeryShop
+namespace BakeryShop.Domain.Models
 {
      class Bread : IProduct
      {
           public List<Ingredient> Ingredients { get; } = new();
+
           private readonly Storage _storage = Storage.Intance;
 
           public Bread(bool isGlutenFree = false)

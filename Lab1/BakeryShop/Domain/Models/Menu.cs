@@ -1,7 +1,7 @@
 ﻿using BakeryShop.Interfaces;
 using System.Collections.Generic;
 
-namespace BakeryShop
+namespace BakeryShop.Domain.Models
 {
      sealed class Menu
      {

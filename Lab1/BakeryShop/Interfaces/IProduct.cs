@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using BakeryShop.Domain.Models;
+using System.Collections.Generic;
 
 namespace BakeryShop.Interfaces
 {

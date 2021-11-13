@@ -1,6 +1,6 @@
 ﻿using BakeryShop.Enums;
- 
-namespace BakeryShop
+
+namespace BakeryShop.Domain.Models
 {
      class Ingredient
      {

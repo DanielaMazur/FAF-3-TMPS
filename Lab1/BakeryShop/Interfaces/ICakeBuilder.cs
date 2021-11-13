@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BakeryShop.Domain.Models;
+
 namespace BakeryShop.Interfaces
 {
      interface ICakeBuilder
