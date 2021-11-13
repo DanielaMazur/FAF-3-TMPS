@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace BakeryShop.Domain.Models
 {
-     class BakeryShop
+     class BakeryShop : IBackeryShop
      {
           private Menu _menu;
           private Storage _storage;
