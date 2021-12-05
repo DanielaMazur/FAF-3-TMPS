@@ -19,3 +19,5 @@ Design patterns are a group of predefined solutions that help in solving differe
 [Creational Design Pattern Report](./Reports/CreationalDesignPatterns.md)
 
 [Structural Design Pattern Report](./Reports/StructuralDesignPatterns.md)
+
+[Behavioral Design Patterns](./Reports/BehavioralDesignPatterns.md)
