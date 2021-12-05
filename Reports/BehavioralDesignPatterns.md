@@ -65,8 +65,11 @@ References => https://refactoring.guru/design-patterns/strategy
 ## Example :
 
 Card Payment
+
 ![BackeryShop](../assets/BackeryShop.png)
-Paypal payment
+<br/>Paypal payment
+
 ![PaypalPayment](../assets/PaypalPayment.png)
-Cash payment
+<br/>Cash payment
+
 ![CashPayment](../assets/CashPayment.png)
