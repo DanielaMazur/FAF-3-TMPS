@@ -11,5 +11,12 @@ namespace BakeryShop.Domain.Models
                Id = id;
                Item = product;
           }
+
+          public override string ToString()
+          {
+               return $"Id = {Id}\n" +
+                      $"Item = {Item}\n" +
+                      $"Price = {Item.GetPrice()}\n";
+          }
      }
 }
